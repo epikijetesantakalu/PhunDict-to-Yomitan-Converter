@@ -29,6 +29,10 @@ const index = new DictionaryIndex()
 .setAuthor(dictData.author)
 .setDescription("かえるさんの雰和辞典をyomitan形式に変換したもの")
 .setAttribution("CC4.0")
+.setUrl("https://github.com/epikijetesantakalu/PhunDict-for-Yomitan")
+.setIndexUrl("https://github.com/epikijetesantakalu/PhunDict-for-Yomitan/releases/latest/download/index.json")
+.setDownloadUrl("https://github.com/epikijetesantakalu/PhunDict-for-Yomitan/releases/latest/download/PhunDict.zip")
+.setIsUpdatable(true)
 .build();
 
 await dictionary.setIndex(index, "./dictionary", "index.json");
