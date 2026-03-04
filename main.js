@@ -31,7 +31,7 @@ const index = new DictionaryIndex()
 .setAttribution("CC4.0")
 .build();
 
-await dictionary.setIndex(index, "../phun-dictionaries/PhunDict", "index.json");
+await dictionary.setIndex(index, "./dictionary", "index.json");
 
 for (let i = 0; i < dictData.data.length; i++) {
     for (let j = 0; j < dictData.data[i].mean.length; j++) {
@@ -60,4 +60,4 @@ for (let i = 0; i < dictData.data.length; i++) {
 
 await dictionary.addFile('./styles.css', 'styles.css');
 
-await dictionary.export("../phun-dictionaries/PhunDict");
+await dictionary.export("./dictionary");
