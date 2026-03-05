@@ -1,0 +1,945 @@
+{
+    "version": 0,
+    "date": "2026-03-05 15:06:06",
+    "url": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/",
+    "manifest": {
+        "author": "Yomidevs",
+        "browser_specific_settings": {
+            "gecko": {
+                "admin_install_only": null,
+                "data_collection_permissions": null,
+                "id": "{6b733b82-9261-47ee-a595-2dda294a4d08}",
+                "strict_max_version": null,
+                "strict_min_version": "115.0",
+                "update_url": null
+            },
+            "gecko_android": {
+                "strict_max_version": null,
+                "strict_min_version": "115.0"
+            }
+        },
+        "description": "Popup dictionary for language learning",
+        "developer": null,
+        "homepage_url": null,
+        "install_origins": null,
+        "manifest_version": 3,
+        "name": "Yomitan Popup Dictionary",
+        "short_name": null,
+        "version": "26.1.19.0",
+        "background": {
+            "page": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/background.html",
+            "preferred_environment": null,
+            "scripts": null,
+            "service_worker": null,
+            "type": null
+        },
+        "content_scripts": [
+            {
+                "all_frames": true,
+                "css": null,
+                "css_origin": "author",
+                "exclude_globs": null,
+                "exclude_matches": null,
+                "include_globs": null,
+                "js": [
+                    "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/js/app/content-script-wrapper.js"
+                ],
+                "match_about_blank": true,
+                "match_origin_as_fallback": null,
+                "matches": [
+                    "http://*/*",
+                    "https://*/*",
+                    "file://*/*"
+                ],
+                "run_at": "document_idle",
+                "world": "ISOLATED"
+            }
+        ],
+        "content_security_policy": {
+            "extension_pages": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; img-src blob: 'self'; style-src 'self' 'unsafe-inline'; media-src *; connect-src *"
+        },
+        "granted_host_permissions": false,
+        "hidden": false,
+        "host_permissions": [
+            "<all_urls>"
+        ],
+        "icons": {
+            "16": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon16.png",
+            "19": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon19.png",
+            "32": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon32.png",
+            "38": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon38.png",
+            "48": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon48.png",
+            "64": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon64.png",
+            "128": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon128.png"
+        },
+        "incognito": "spanning",
+        "minimum_chrome_version": "102.0.0.0",
+        "minimum_opera_version": null,
+        "optional_host_permissions": [],
+        "optional_permissions": [
+            "clipboardRead",
+            "nativeMessaging"
+        ],
+        "options_page": null,
+        "options_ui": {
+            "browser_style": false,
+            "open_in_tab": true,
+            "page": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/settings.html"
+        },
+        "permissions": [
+            "storage",
+            "clipboardWrite",
+            "unlimitedStorage",
+            "declarativeNetRequest",
+            "scripting",
+            "contextMenus"
+        ],
+        "web_accessible_resources": [
+            {
+                "extension_ids": null,
+                "matches": [
+                    "<all_urls>"
+                ],
+                "resources": [
+                    "/popup.html",
+                    "/js/*",
+                    "/lib/resvg.wasm"
+                ]
+            }
+        ],
+        "chrome_settings_overrides": null,
+        "commands": {
+            "toggleTextScanning": {
+                "description": "Toggle text scanning on/off",
+                "suggested_key": {
+                    "additionalProperties": null,
+                    "android": null,
+                    "chromeos": null,
+                    "default": "Alt+Delete",
+                    "ios": null,
+                    "linux": null,
+                    "mac": null,
+                    "windows": null
+                }
+            },
+            "openInfoPage": {
+                "description": "Open the info page",
+                "suggested_key": null
+            },
+            "openSettingsPage": {
+                "description": "Open the settings page",
+                "suggested_key": null
+            },
+            "openSearchPage": {
+                "description": "Open the search page",
+                "suggested_key": {
+                    "additionalProperties": null,
+                    "android": null,
+                    "chromeos": null,
+                    "default": "Alt+Insert",
+                    "ios": null,
+                    "linux": null,
+                    "mac": null,
+                    "windows": null
+                }
+            },
+            "openPopupWindow": {
+                "description": "Open the popup window",
+                "suggested_key": null
+            }
+        },
+        "devtools_page": null,
+        "action": {
+            "browser_style": false,
+            "default_area": null,
+            "default_icon": {
+                "16": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon16.png",
+                "19": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon19.png",
+                "32": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon32.png",
+                "38": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon38.png",
+                "48": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon48.png",
+                "64": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon64.png",
+                "128": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/images/icon128.png"
+            },
+            "default_popup": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/action-popup.html",
+            "default_title": "Yomitan",
+            "theme_icons": null
+        },
+        "omnibox": {
+            "keyword": "yomi"
+        },
+        "page_action": null,
+        "sidebar_action": null,
+        "chrome_url_overrides": null,
+        "declarative_net_request": null,
+        "default_locale": null,
+        "l10n_resources": null,
+        "protocol_handlers": null,
+        "theme_experiment": null,
+        "experiment_apis": null,
+        "applications": {
+            "gecko": {
+                "admin_install_only": null,
+                "data_collection_permissions": null,
+                "id": "{6b733b82-9261-47ee-a595-2dda294a4d08}",
+                "strict_max_version": null,
+                "strict_min_version": "115.0",
+                "update_url": null
+            },
+            "gecko_android": {
+                "strict_max_version": null,
+                "strict_min_version": "115.0"
+            }
+        }
+    },
+    "environment": {
+        "browser": "firefox",
+        "platform": {
+            "os": "linux"
+        }
+    },
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
+    "permissions": {
+        "origins": [
+            "http://*/*",
+            "https://*/*",
+            "file://*/*",
+            "<all_urls>"
+        ],
+        "data_collection": [],
+        "permissions": [
+            "storage",
+            "clipboardWrite",
+            "unlimitedStorage",
+            "declarativeNetRequest",
+            "scripting",
+            "contextMenus",
+            "clipboardRead"
+        ]
+    },
+    "options": {
+        "profiles": [
+            {
+                "name": "Phun",
+                "options": {
+                    "general": {
+                        "enable": true,
+                        "resultOutputMode": "group",
+                        "debugInfo": false,
+                        "maxResults": 32,
+                        "showAdvanced": true,
+                        "popupDisplayMode": "default",
+                        "popupWidth": 512,
+                        "popupHeight": 312,
+                        "popupHorizontalOffset": 0,
+                        "popupVerticalOffset": 0,
+                        "popupHorizontalOffset2": 0,
+                        "popupVerticalOffset2": 0,
+                        "popupHorizontalTextPosition": "below",
+                        "popupVerticalTextPosition": "before",
+                        "showGuide": false,
+                        "compactTags": true,
+                        "mainDictionary": "JMdict",
+                        "customPopupCss": ":root {\n    --background-color: #DEE4E7;\n    --text-color: #000000;\n    --tag-frequency-background-color: #8181C1;\n    --tag-part-of-speech-background-color: #8181C1;\n    --tag-text-color: #FFFFFF;\n    --reason-text-color: #808080;\n    --notification-text-color: #000000;\n    --notification-background-color: #E5E9F0;\n    --sidebar-background-color: #CFD9DC;\n    --sidebar-button-background-color-hover: #9283C1;\n    --sidebar-button-danger-background-color-hover: #BF616A;\n    --sidebar-button-icon-color: #A89BD0;\n    --accent-color: #8181C1;\n    --dict-color: #9057AD;\n    --dict-text-color: #FFFFFF;\n}\n\n:root[data-theme=\"dark\"] {\n    --background-color: #2E303E;\n    --text-color: #FFFFFF;\n    --tag-frequency-background-color: #67679A;\n    --tag-part-of-speech-background-color: #67679A;\n    --reason-text-color: #808080;\n    --notification-text-color: #FFFFFF;\n    --notification-background-color: #3B4252;\n    --sidebar-background-color: #262733;\n    --sidebar-button-background-color-hover: #644EA7;\n    --sidebar-button-danger-background-color-hover: #BF616A;\n    --sidebar-button-icon-color: #A89BD0;\n    --accent-color: #67679A;\n    --dict-color: #9057AD;\n    --dict-text-color: #FFFFFF;\n}\n\nspan.headword-term {\n    font-family: notosans;\n}\n\nspan.query-parser-term {\n    font-family: notosans;\n}\n\n.gloss-content {\n    font-family: notosans;\n    line-height: 1.5;\n    font-size: 16px;\n}\n\n.definition-tag-list {\n    float: left;\n    line-height: 1;\n    height: 1em;\n}\n \n.definition-list {\n    padding: 0;\n}\n\n.definition-item { \n    display: inline-block;\n    margin-bottom: 10px;\n    border-bottom: 1px solid;\n    margin: 0 calc(0px - var(--entry-horizontal-padding));\n    width: 100%;\n    padding: 10px calc(var(--entry-horizontal-padding)) 10px calc(var(--entry-horizontal-padding));\n}\n\n.tag-label-content {\n    font-family: notosans;\n    font-size: 11px;\n}\n\n.tag {\n    --tag-height: 0;\n}\n\n.tag[data-details=\"アクセント辞典\"] {\n    --tag-color: var(--accent-color);\n    --tag-text-color: var(--dict-text-color);\n}\n\n.tag[data-details=\"JMdict (English)\"] {\n    --tag-color: var(--dict-color);\n    --tag-text-color: var(--dict-text-color);\n}\n \n.tag[data-details=\"旺文社国語辞典 第十一版\"] {\n    --tag-color: var(--dict-color);\n    --tag-text-color: var(--dict-text-color);\n}\n \n.tag[data-details=\"明鏡国語辞典\"] { \n    --tag-color: var(--dict-color);\n    --tag-text-color: var(--dict-text-color);\n}\n \n.tag[data-details=\"ハイブリッド新辞林\"] {\n    --tag-color: var(--dict-color);\n    --tag-text-color: var(--dict-text-color);\n}\n \n.tag[data-details=\"実用日本語表現辞典\"] {\n    --tag-color: var(--dict-color);\n    --tag-text-color: var(--dict-text-color);\n}\n \n.tag[data-details=\"新明解国語辞典 第五版\"] {\n    --tag-color: var(--dict-color);\n    --tag-text-color: var(--dict-text-color);\n}\n \n.tag[data-details=\"デジタル大辞泉\"] {\n    --tag-color: var(--dict-color);\n    --tag-text-color: var(--dict-text-color);\n}\n \n.tag[data-details=\"研究社　新和英大辞典　第５版\"] {\n    --tag-color: var(--dict-color);\n    --tag-text-color: var(--dict-text-color);\n}\n\n::-webkit-scrollbar {\n    display: none;\n}\n\n.top-progress-bar-container {\n    display: none;\n}\n\n.kanji-glyph-data > tbody > tr:nth-child(n + 3) {\n  display: none;\n}\n\ndiv.entry[data-type='kanji']:nth-child(n + 2) .kanji-glyph-container,\ndiv.entry[data-type='kanji']:nth-child(n + 2) [data-section-type='frequencies'],\ndiv.entry[data-type='kanji']:nth-child(n + 2) table.kanji-glyph-data > tbody > tr:first-child {\n  display: none;\n}\n\n.kanji-info-table-item-value-empty {\n  display: none;\n}\n\n.kanji-glyph-data,\ndiv.entry[data-type='kanji'],\ndiv.entry[data-type='kanji']:nth-child(n + 2) .kanji-glyph-data > tbody > tr > *,\n.kanji-glyph-data dl.kanji-readings-japanese,\ndiv.entry[data-type='kanji']:nth-child(n + 2)\n  .kanji-glyph-data\n  dl.kanji-readings-chinese[data-count='0'] {\n  padding-top: 0 !important;\n  padding-bottom: 0 !important;\n  margin-bottom: 0em;\n  margin-top: 0 !important;\n}\n\n.entry + .entry[data-type='kanji'],\ndiv#dictionary-entries > div.entry:nth-child(n + 2) .kanji-glyph-data > tbody > tr > * {\n  border-top: none !important;\n}\n\n.kanji-gloss-list {\n  list-style-type: circle;\n}\n\n.headword-kanji-link, .kanji-glyph {\n  font-family: \"PhunSans\", \"PhunSans Sans-Rounded\", \"PhunDot\" !important;\n}",
+                        "popupTheme": "browser",
+                        "popupOuterTheme": "site",
+                        "customPopupOuterCss": "",
+                        "enableWanakana": true,
+                        "popupScalingFactor": 1,
+                        "popupScaleRelativeToPageZoom": false,
+                        "popupScaleRelativeToVisualViewport": true,
+                        "showPitchAccentDownstepNotation": true,
+                        "showPitchAccentPositionNotation": true,
+                        "showPitchAccentGraph": true,
+                        "showIframePopupsInRootFrame": false,
+                        "useSecurePopupFrameUrl": true,
+                        "usePopupShadowDom": true,
+                        "usePopupWindow": false,
+                        "glossaryLayoutMode": "default",
+                        "popupCurrentIndicatorMode": "triangle",
+                        "popupActionBarVisibility": "auto",
+                        "popupActionBarLocation": "top",
+                        "frequencyDisplayMode": "split-tags-grouped",
+                        "termDisplayMode": "ruby",
+                        "sortFrequencyDictionary": "CC100",
+                        "sortFrequencyDictionaryOrder": "ascending",
+                        "language": "zh",
+                        "enableContextMenuScanSelected": true,
+                        "stickySearchHeader": false,
+                        "fontFamily": "",
+                        "fontSize": 14,
+                        "lineHeight": "1.5",
+                        "showDebug": false,
+                        "averageFrequency": false,
+                        "enableYomitanApi": false,
+                        "yomitanApiServer": "http://127.0.0.1:19633",
+                        "yomitanApiAllowCssSanitizationBypass": false
+                    },
+                    "audio": {
+                        "enabled": true,
+                        "sources": [
+                            {
+                                "type": "jpod101",
+                                "url": "",
+                                "voice": ""
+                            },
+                            {
+                                "type": "language-pod-101",
+                                "url": "",
+                                "voice": ""
+                            },
+                            {
+                                "type": "custom",
+                                "url": "https://epiku.net/phun-audios/mp3/{reading}.mp3",
+                                "voice": ""
+                            }
+                        ],
+                        "volume": 25,
+                        "autoPlay": false,
+                        "fallbackSoundType": "click",
+                        "enableDefaultAudioSources": true
+                    },
+                    "scanning": {
+                        "selectText": true,
+                        "alphanumeric": false,
+                        "autoHideResults": true,
+                        "delay": 0,
+                        "length": 10,
+                        "deepDomScan": false,
+                        "popupNestingMaxDepth": 5,
+                        "enablePopupSearch": false,
+                        "enableOnPopupExpressions": true,
+                        "enableOnSearchPage": true,
+                        "enableSearchTags": false,
+                        "layoutAwareScan": false,
+                        "hideDelay": 100,
+                        "preventMiddleMouse": {
+                            "onWebPages": false,
+                            "onPopupPages": false,
+                            "onSearchPages": false,
+                            "onSearchQuery": false,
+                            "onTextHover": null
+                        },
+                        "inputs": [
+                            {
+                                "include": "shift",
+                                "exclude": "mouse0",
+                                "types": {
+                                    "mouse": true,
+                                    "touch": false,
+                                    "pen": false
+                                },
+                                "options": {
+                                    "showAdvanced": false,
+                                    "searchTerms": true,
+                                    "searchKanji": true,
+                                    "scanOnTouchMove": true,
+                                    "scanOnPenHover": true,
+                                    "scanOnPenPress": true,
+                                    "scanOnPenRelease": false,
+                                    "preventTouchScrolling": true,
+                                    "scanOnPenMove": true,
+                                    "scanOnPenReleaseHover": false,
+                                    "scanOnTouchPress": false,
+                                    "scanOnTouchRelease": false,
+                                    "preventPenScrolling": true,
+                                    "scanOnTouchTap": true,
+                                    "minimumTouchTime": 0
+                                }
+                            },
+                            {
+                                "include": "mouse2",
+                                "exclude": "",
+                                "types": {
+                                    "mouse": true,
+                                    "touch": false,
+                                    "pen": false
+                                },
+                                "options": {
+                                    "showAdvanced": false,
+                                    "searchTerms": true,
+                                    "searchKanji": true,
+                                    "scanOnTouchMove": true,
+                                    "scanOnPenHover": true,
+                                    "scanOnPenPress": true,
+                                    "scanOnPenRelease": false,
+                                    "preventTouchScrolling": true,
+                                    "scanOnPenMove": true,
+                                    "scanOnPenReleaseHover": false,
+                                    "scanOnTouchPress": false,
+                                    "scanOnTouchRelease": false,
+                                    "preventPenScrolling": true,
+                                    "scanOnTouchTap": true,
+                                    "minimumTouchTime": 0
+                                }
+                            },
+                            {
+                                "include": "",
+                                "exclude": "",
+                                "types": {
+                                    "mouse": false,
+                                    "touch": true,
+                                    "pen": true
+                                },
+                                "options": {
+                                    "showAdvanced": false,
+                                    "searchTerms": true,
+                                    "searchKanji": true,
+                                    "scanOnTouchMove": false,
+                                    "scanOnPenHover": false,
+                                    "scanOnPenPress": true,
+                                    "scanOnPenRelease": false,
+                                    "preventTouchScrolling": false,
+                                    "scanOnPenMove": true,
+                                    "scanOnPenReleaseHover": false,
+                                    "scanOnTouchPress": false,
+                                    "scanOnTouchRelease": false,
+                                    "preventPenScrolling": false,
+                                    "scanOnTouchTap": true,
+                                    "minimumTouchTime": 0
+                                }
+                            }
+                        ],
+                        "modifier": null,
+                        "matchTypePrefix": false,
+                        "hidePopupOnCursorExit": false,
+                        "hidePopupOnCursorExitDelay": 100,
+                        "normalizeCssZoom": true,
+                        "scanWithoutMousemove": true,
+                        "scanResolution": "character",
+                        "preventBackForward": {
+                            "onTextHover": null,
+                            "onWebPages": false,
+                            "onPopupPages": false,
+                            "onSearchPages": false,
+                            "onSearchQuery": false
+                        },
+                        "reducedMotionScrolling": false,
+                        "reducedMotionScrollingScale": 1,
+                        "reducedMotionScrollingSwipeThreshold": 40
+                    },
+                    "dictionaries": [
+                        {
+                            "name": "PhunDict",
+                            "alias": "PhunDict",
+                            "enabled": true,
+                            "allowSecondarySearches": false,
+                            "definitionsCollapsible": "not-collapsible",
+                            "partsOfSpeechFilter": true,
+                            "useDeinflections": true,
+                            "styles": "[data-sc-part-of-speech] {\n  display: inline-flex;\n  align-items: center;\n  background-color: var(--tag-part-of-speech-background-color);\n  color: var(--tag-part-of-speech-foreground-color);\n  font-size: 0.8em;\n  padding: 0 0.375em;\n  margin-right: 0.375em;\n  border-radius: 0.25em;\n}\n\n[data-sc-long-explanation] {\n  margin-top: 4px;\n  font-size: 0.9em;\n  opacity: 0.8;\n}"
+                        },
+                        {
+                            "name": "TuoDict",
+                            "alias": "TuoDict",
+                            "enabled": true,
+                            "allowSecondarySearches": false,
+                            "definitionsCollapsible": "not-collapsible",
+                            "partsOfSpeechFilter": true,
+                            "useDeinflections": true,
+                            "styles": ""
+                        }
+                    ],
+                    "anki": {
+                        "enable": false,
+                        "server": "http://127.0.0.1:8765",
+                        "tags": [],
+                        "screenshot": {
+                            "format": "png",
+                            "quality": 92
+                        },
+                        "fieldTemplates": null,
+                        "duplicateScope": "collection",
+                        "checkForDuplicates": true,
+                        "suspendNewCards": false,
+                        "duplicateScopeCheckAllModels": false,
+                        "noteGuiMode": "browse",
+                        "apiKey": "",
+                        "downloadTimeout": 0,
+                        "duplicateBehavior": "new",
+                        "displayTagsAndFlags": "never",
+                        "cardFormats": [
+                            {
+                                "name": "Format 3",
+                                "type": "term",
+                                "deck": "",
+                                "model": "",
+                                "fields": {},
+                                "icon": "big-circle"
+                            }
+                        ],
+                        "targetTags": [],
+                        "forceSync": false
+                    },
+                    "parsing": {
+                        "enableScanningParser": true,
+                        "enableMecabParser": false,
+                        "selectedParser": "scan",
+                        "readingMode": "none",
+                        "termSpacing": false
+                    },
+                    "translation": {
+                        "textReplacements": {
+                            "searchOriginal": true,
+                            "groups": [
+                                [
+                                    {
+                                        "pattern": "1|１",
+                                        "ignoreCase": false,
+                                        "replacement": "一"
+                                    },
+                                    {
+                                        "pattern": "2|２",
+                                        "ignoreCase": false,
+                                        "replacement": "二"
+                                    },
+                                    {
+                                        "pattern": "3|３",
+                                        "ignoreCase": false,
+                                        "replacement": "三"
+                                    },
+                                    {
+                                        "pattern": "4|４",
+                                        "ignoreCase": false,
+                                        "replacement": "四"
+                                    },
+                                    {
+                                        "pattern": "5|５",
+                                        "ignoreCase": false,
+                                        "replacement": "五"
+                                    },
+                                    {
+                                        "pattern": "6|６",
+                                        "ignoreCase": false,
+                                        "replacement": "六"
+                                    },
+                                    {
+                                        "pattern": "7|７",
+                                        "ignoreCase": false,
+                                        "replacement": "七"
+                                    },
+                                    {
+                                        "pattern": "8|８",
+                                        "ignoreCase": false,
+                                        "replacement": "八"
+                                    },
+                                    {
+                                        "pattern": "9|９",
+                                        "ignoreCase": false,
+                                        "replacement": "九"
+                                    },
+                                    {
+                                        "pattern": "(.)々",
+                                        "ignoreCase": false,
+                                        "replacement": "$1$1"
+                                    },
+                                    {
+                                        "pattern": "ッ",
+                                        "ignoreCase": false,
+                                        "replacement": "っ"
+                                    },
+                                    {
+                                        "pattern": "・|、|\\-|\\.|\\s",
+                                        "ignoreCase": false,
+                                        "replacement": ""
+                                    }
+                                ]
+                            ]
+                        },
+                        "searchResolution": "letter"
+                    },
+                    "sentenceParsing": {
+                        "scanExtent": 200,
+                        "terminationCharacters": [
+                            {
+                                "enabled": true,
+                                "character1": "「",
+                                "character2": "」",
+                                "includeCharacterAtStart": true,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "『",
+                                "character2": "』",
+                                "includeCharacterAtStart": true,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "\"",
+                                "character2": "\"",
+                                "includeCharacterAtStart": true,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "'",
+                                "character2": "'",
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": false
+                            },
+                            {
+                                "enabled": true,
+                                "character1": ".",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "!",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "?",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "．",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "。",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "！",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "？",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "…",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "︒",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "︕",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "︖",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            },
+                            {
+                                "enabled": true,
+                                "character1": "︙",
+                                "character2": null,
+                                "includeCharacterAtStart": false,
+                                "includeCharacterAtEnd": true
+                            }
+                        ],
+                        "terminationCharacterMode": "custom"
+                    },
+                    "inputs": {
+                        "hotkeys": [
+                            {
+                                "action": "close",
+                                "key": "Escape",
+                                "modifiers": [],
+                                "scopes": [
+                                    "popup"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "focusSearchBox",
+                                "key": "Escape",
+                                "modifiers": [],
+                                "scopes": [
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "previousEntry",
+                                "key": "PageUp",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": "3"
+                            },
+                            {
+                                "action": "nextEntry",
+                                "key": "PageDown",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": "3"
+                            },
+                            {
+                                "action": "lastEntry",
+                                "key": "End",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "firstEntry",
+                                "key": "Home",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "previousEntry",
+                                "key": "ArrowUp",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": "1"
+                            },
+                            {
+                                "action": "nextEntry",
+                                "key": "ArrowDown",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": "1"
+                            },
+                            {
+                                "action": "historyBackward",
+                                "key": "KeyB",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "historyForward",
+                                "key": "KeyF",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "addNote",
+                                "key": "KeyK",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": "2"
+                            },
+                            {
+                                "action": "addNote",
+                                "key": "KeyE",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": "0"
+                            },
+                            {
+                                "action": "addNote",
+                                "key": "KeyR",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": "1"
+                            },
+                            {
+                                "action": "playAudio",
+                                "key": "KeyP",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "viewNotes",
+                                "key": "KeyV",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search"
+                                ],
+                                "enabled": true,
+                                "argument": "0"
+                            },
+                            {
+                                "action": "copyHostSelection",
+                                "key": "KeyC",
+                                "modifiers": [
+                                    "ctrl"
+                                ],
+                                "scopes": [
+                                    "popup"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "profilePrevious",
+                                "key": "Minus",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search",
+                                    "web"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            },
+                            {
+                                "action": "profileNext",
+                                "key": "Equal",
+                                "modifiers": [
+                                    "alt"
+                                ],
+                                "scopes": [
+                                    "popup",
+                                    "search",
+                                    "web"
+                                ],
+                                "enabled": true,
+                                "argument": ""
+                            }
+                        ]
+                    },
+                    "popupWindow": {
+                        "width": 400,
+                        "height": 250,
+                        "left": 0,
+                        "top": 0,
+                        "useLeft": false,
+                        "useTop": false,
+                        "windowType": "popup",
+                        "windowState": "normal"
+                    },
+                    "clipboard": {
+                        "enableBackgroundMonitor": false,
+                        "enableSearchPageMonitor": true,
+                        "autoSearchContent": true,
+                        "maximumSearchLength": 1000
+                    },
+                    "accessibility": {
+                        "forceGoogleDocsHtmlRendering": false
+                    }
+                },
+                "conditionGroups": [
+                    {
+                        "conditions": [
+                            {
+                                "type": "modifierKeys",
+                                "operator": "are",
+                                "value": "alt"
+                            }
+                        ]
+                    }
+                ],
+                "id": "profile-0"
+            }
+        ],
+        "profileCurrent": 0,
+        "version": 74,
+        "global": {
+            "database": {
+                "prefixWildcardsSupported": true
+            },
+            "dataTransmissionConsentShown": false
+        }
+    }
+}
