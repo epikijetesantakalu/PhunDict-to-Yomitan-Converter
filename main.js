@@ -27,7 +27,7 @@ const dictionary = new Dictionary({
 
 const index = new DictionaryIndex()
     .setTitle("PhunDict")
-    .setRevision("1.0.3")
+    .setRevision("1.0.4")
     .setAuthor(dictData.author)
     .setDescription("かえるさんの雰和辞典をyomitan形式に変換したもの")
     .setAttribution("CC BY-NC 4.0")
