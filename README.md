@@ -8,5 +8,9 @@ PhunDict for Yomitanは、[@kaeru2193](https://github.com/kaeru2193)が作成し
 3. yomitan設定ファイルを[ダウンロード](https://github.com/epikijetesantakalu/PhunDict-for-Yomitan/releases/latest/download/settings.json)し、Yomitanの設定画面のBackupのImport Settingsからインポートする。
 4. デフォルトだとShiftホバーで使えるよ！（スマホ版は多分長押し）
 5. Configure installed and enabled dictionaries...の画面からたまにアップデートがないか確認しよう！
+## Ankiとの併用方
+1. AnkiのアドオンにAnkiConnect（コード：2055492159）を追加する。
+2. [このファイル](https://github.com/epikijetesantakalu/PhunDict-for-Yomitan/releases/latest/download/PhunYomitan.apkg)をデッキとして読み込む。
+3. ポップアップ辞書の緑色のボタンから追加する。
 ## 一緒に使うことをおすすめする辞書
-- [TuoDict For Yomitan](https://github.com/epikijetesantakalu/TuoDict-for-Yomitan/)
+- [TuoDict For Yomitan](https://github.com/epikijetesantakalu/TuoDict-for-Yomitan/) ←yomitan設定ファイルをインポートすると一緒に入るよ

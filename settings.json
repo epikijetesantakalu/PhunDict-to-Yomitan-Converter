@@ -1,6 +1,6 @@
 {
     "version": 0,
-    "date": "2026-03-05 15:06:06",
+    "date": "2026-03-05 17:11:25",
     "url": "moz-extension://e11a3e93-22f8-49de-8a70-c776b76b8623/",
     "manifest": {
         "author": "Yomidevs",
@@ -279,16 +279,6 @@
                         "enabled": true,
                         "sources": [
                             {
-                                "type": "jpod101",
-                                "url": "",
-                                "voice": ""
-                            },
-                            {
-                                "type": "language-pod-101",
-                                "url": "",
-                                "voice": ""
-                            },
-                            {
                                 "type": "custom",
                                 "url": "https://epiku.net/phun-audios/mp3/{reading}.mp3",
                                 "voice": ""
@@ -441,7 +431,7 @@
                         }
                     ],
                     "anki": {
-                        "enable": false,
+                        "enable": true,
                         "server": "http://127.0.0.1:8765",
                         "tags": [],
                         "screenshot": {
@@ -460,11 +450,56 @@
                         "displayTagsAndFlags": "never",
                         "cardFormats": [
                             {
-                                "name": "Format 3",
+                                "name": "Phun",
                                 "type": "term",
-                                "deck": "",
-                                "model": "",
-                                "fields": {},
+                                "deck": "Phun Yomitan",
+                                "model": "Phun Yomitan",
+                                "fields": {
+                                    "Word": {
+                                        "value": "{expression}",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Reading": {
+                                        "value": "{reading}",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Definition": {
+                                        "value": "{glossary}",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Explanation": {
+                                        "value": "",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Audio": {
+                                        "value": "{audio}",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Sentence": {
+                                        "value": "{sentence}",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Cloze Prefix": {
+                                        "value": "{cloze-prefix}",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Cloze Suffix": {
+                                        "value": "{cloze-suffix}",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "SentenceAudio": {
+                                        "value": "",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Screenshot": {
+                                        "value": "",
+                                        "overwriteMode": "coalesce"
+                                    },
+                                    "Glossary": {
+                                        "value": "",
+                                        "overwriteMode": "coalesce"
+                                    }
+                                },
                                 "icon": "big-circle"
                             }
                         ],
